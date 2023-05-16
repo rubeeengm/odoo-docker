@@ -1,0 +1,5 @@
+.idea/
+.code/
+
+config/odoo.conf
+.env
