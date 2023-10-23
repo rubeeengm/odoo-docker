@@ -8,15 +8,21 @@ initial-config:
 	if [ ! -f $(current-dir).env ]; then cp $(current-dir).env.example $(current-dir).env; fi
 
 build:
-	docker-compose up -d
+	docker compose up -d
+
+clean:
+	docker compose down -v
 
 stop:
-	docker stop odoo_postgres_15
+	docker stop odoo_db_16
 	docker stop odoo_app_16
 
 start:
-	docker start odoo_postgres_15
+	docker start odoo_db_16
 	docker start odoo_app_16
 
 restart:
 	docker restart odoo_app_16
+
+logs:
+	docker logs -f odoo_app_16
