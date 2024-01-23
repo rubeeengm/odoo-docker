@@ -1,3 +1,8 @@
+Certainly! Here's the updated README with the Odoo 17 badge:
+
+```markdown
+[![Odoo 17](https://img.shields.io/badge/Odoo-17-green)](https://www.odoo.com/)
+
 # Odoo Dockerized Setup
 
 This repository provides a Dockerized setup for running Odoo. It includes a Makefile with helpful commands for managing the Odoo environment. Follow the instructions below to set up and manage your Odoo instance.
