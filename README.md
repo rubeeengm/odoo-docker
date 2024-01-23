@@ -15,6 +15,7 @@ To set up the initial configuration, run the following command:
 
 ```bash
 make initial-config
+```
 
 This will create necessary directories and copy configuration files.
 
