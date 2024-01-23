@@ -1,6 +1,3 @@
-Certainly! Here's the updated README with the Odoo 17 badge:
-
-```markdown
 [![Odoo 17](https://img.shields.io/badge/Odoo-17-green)](https://www.odoo.com/)
 
 # Odoo Dockerized Setup
@@ -18,7 +15,6 @@ To set up the initial configuration, run the following command:
 
 ```bash
 make initial-config
-```
 
 This will create necessary directories and copy configuration files.
 
