@@ -8,7 +8,7 @@ services:
         ports:
             - "${WEB_PORT}:8069"
         volumes:
-            - odoo-web-16-data:/var/lib/odoo
+            - odoo-web-15-data:/var/lib/odoo
             - ./config:/etc/odoo
             - ./addons:/mnt/extra-addons
             - ./addons-customize:/mnt/extra-addons-customize
@@ -24,7 +24,7 @@ services:
         ports:
             - "${DB_PORT}:5432"
         volumes:
-            - odoo-db-16-data:/var/lib/postgresql/data/pgdata
+            - odoo-db-15-data:/var/lib/postgresql/data/pgdata
 volumes:
-    odoo-web-16-data:
-    odoo-db-16-data:
+    odoo-web-15-data:
+    odoo-db-15-data:
