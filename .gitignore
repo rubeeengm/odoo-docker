@@ -1,8 +1,11 @@
 .idea/
 .code/
+.vscode/
 
 addons/
 addons-customize/
 
 config/odoo.conf
+
 .env
+.DS_Store
