@@ -1,20 +1,21 @@
-version: '3.1'
 services:
     web:
         container_name: ${WEB_HOST}
+        platform: linux/x86_64
         image: ${WEB_IMAGE}:${WEB_IMAGE_TAG}
         depends_on:
             - db
         ports:
             - "${WEB_PORT}:8069"
         volumes:
-            - odoo-web-17-data:/var/lib/odoo
+            - odoo-web-18-data:/var/lib/odoo
             - ./config:/etc/odoo
             - ./addons:/mnt/extra-addons
             - ./addons-customize:/mnt/extra-addons-customize
         entrypoint: "/usr/bin/odoo -c /etc/odoo/odoo.conf"
     db:
         container_name: ${DB_HOST}
+        platform: linux/x86_64
         image: ${DB_IMAGE}:${DB_TAG}
         environment:
             - POSTGRES_DB=${DB_NAME}
@@ -24,7 +25,7 @@ services:
         ports:
             - "${DB_PORT}:5432"
         volumes:
-            - odoo-db-17-data:/var/lib/postgresql/data/pgdata
+            - odoo-db-18-data:/var/lib/postgresql/data/pgdata
 volumes:
-    odoo-web-17-data:
-    odoo-db-17-data:
+    odoo-web-18-data:
+    odoo-db-18-data:
