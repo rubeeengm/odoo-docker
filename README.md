@@ -1,4 +1,4 @@
-[![Odoo 18](https://img.shields.io/badge/Odoo-18-green)](https://www.odoo.com/)
+[![Odoo 19](https://img.shields.io/badge/Odoo-19-green)](https://www.odoo.com/)
 
 # Odoo Dockerized Setup
 
