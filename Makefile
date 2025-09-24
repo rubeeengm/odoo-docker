@@ -14,15 +14,15 @@ clean:
 	docker compose down -v
 
 stop:
-	docker stop odoo_db_17
-	docker stop odoo_app_17
+	docker stop odoo_db_19
+	docker stop odoo_app_19
 
 start:
-	docker start odoo_db_17
-	docker start odoo_app_17
+	docker start odoo_db_19
+	docker start odoo_app_19
 
 restart:
-	docker restart odoo_app_17
+	docker restart odoo_app_19
 
 logs:
-	docker logs -f odoo_app_17
+	docker logs -f odoo_app_19
